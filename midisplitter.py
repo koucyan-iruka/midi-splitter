@@ -55,8 +55,7 @@ def split_channels(input_path):
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print("使い方: 引数に処理するmidiファイルのパスを指定してください。")
-        print("例: >python midispritter.py input.midi")
+        print("Specify the path of the MIDI file to be processed as an argument.")
     else:
         split_channels(sys.argv[1])
-        print("処理完了" + sys.argv[1].replace(".mid","") + "_output.mid")
+        print("Process Done" + sys.argv[1].replace(".mid","") + "_output.mid")
